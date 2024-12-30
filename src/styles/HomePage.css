@@ -1,0 +1,45 @@
+.homepage {
+    font-family: Arial, sans-serif;
+  }
+  
+  .search {
+    text-align: center;
+    padding: 50px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    color: rgb(245, 235, 235);
+    min-height: 70vh;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .search input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  .search button {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .popular-destinations {
+    padding: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  

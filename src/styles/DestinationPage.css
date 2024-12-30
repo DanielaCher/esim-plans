@@ -1,0 +1,53 @@
+.destination-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .plan-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .purchase-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .purchase-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .purchase-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .purchase-message {
+    color: green;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  
+  .error {
+    color: red;
+  }
+  

@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Card from "../components/Card";
+import SearchSection from "../components/SearchSection";
+import PopularCountriesSection from "../components/PopularCountriesSection";
+import WhatIsEsimSection from "../components/WhatIsEsimSection";
+import HowItWorksSection from "../components/HowItWorksSection";
 import "./../styles/HomePage.css";
 import sectionImage from "../images/section-image.jpg";
 
@@ -21,25 +26,15 @@ function HomePage() {
     <div>
       <Header />
       <main className="homepage">
-        <section
-          className="search"
-          style={{
-            backgroundImage: `url(${sectionImage})`,
-            alignItems: "center",
-            height: "400px",
-          }}
-        >
-          <div className="text">Get your eSIM now </div>
-          <div className="search-container">
-            <input
-              type="text"
-              placeholder="Choose your destination.."
-              value={destination}
-              onChange={(e) => setDestination(e.target.value)}
-            />
-            <button onClick={handleSearch}>Search</button>
-          </div>
-        </section>
+        <SearchSection
+          destination={destination}
+          setDestination={setDestination}
+          handleSearch={handleSearch}
+          sectionImage={sectionImage}
+        />
+        <PopularCountriesSection />
+        <WhatIsEsimSection />
+        <HowItWorksSection />
       </main>
       <Footer />
     </div>

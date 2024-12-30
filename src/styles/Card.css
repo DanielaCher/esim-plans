@@ -6,6 +6,11 @@
     cursor: pointer;
     transition: transform 0.2s;
   }
+  .card-svg {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+  }
   
   .card:hover {
     transform: scale(1.05);
@@ -13,6 +18,7 @@
   
   .card-image {
     max-width: 100px;
+    height: auto;
     margin-bottom: 10px;
   }
   

@@ -29,17 +29,112 @@
     padding: 10px 20px;
     background-color: white;
     border: none;
-    color: #007bff;
+    color: #101111;
     cursor: pointer;
   }
   
-  .popular-destinations {
-    padding: 20px;
+  .popular-countries {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .popular-countries h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
   
   .cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
   }
   
+  /* What is eSIM Section */
+  .what-is-esim {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #eef5f9;
+  }
+  
+  .what-is-esim h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .what-is-esim p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  
+  .how-it-works {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .how-it-works h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .how-it-works ol {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 0;
+    margin: 0 auto;
+    list-style: none; 
+    max-width: 800px; 
+  }
+  
+  .how-it-works li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 1.2rem; 
+    font-weight: 500; 
+    text-align: center;
+    color: #111213; 
+  }
+  
+  
+  .how-it-works li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    background: #c1cfdf; 
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px; 
+    margin-right: 15px; 
+  }
+  
+  .how-it-works ol {
+    counter-reset: step-counter; 
+  }
+
+@media (max-width: 768px) {
+  .how-it-works li {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .how-it-works li::before {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

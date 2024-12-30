@@ -4,7 +4,7 @@ import "./../styles/Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <p>Your eSIM in 2 Minutes!</p>
+      <p>Your seamless connection to the world.</p>
     </footer>
   );
 }
